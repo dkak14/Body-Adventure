@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: SO_Title
   m_EditorClassIdentifier: 
   sceneName: Title
-  bgm: {fileID: 0}
+  bgm: {fileID: 8300000, guid: 2707fdd678f38af498b2209974c7e2b8, type: 3}
   fadeInEffectName: NormalFadeEffect
   fadeInDuration: 3
-  isNormalJoin: 0
+  isNormalJoin: 1
   isLoop: 1
-  IsJoin: 1
+  IsJoin: 0

@@ -6,23 +6,23 @@ public class CameraController : MonoBehaviour
 {
     public static CameraController Instance;
     public Transform Target;
-
+    public Transform Criteria;
     public float Duration;
     public float Power;
     public float UpdateTIme;
     public float Speed;
     public float ChasingDst;
+    Vector2 Offset = new Vector2(0, 0);
     private void Awake() {
+        GameObject criteria = new GameObject(name = "CameraCriteria");
+        Criteria = Instantiate(criteria, transform.position, Quaternion.identity).transform;
         ChasingTarget(ChasingDst);
         Instance = this;
     }
     private void Update() {
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            if(Target != null)
-            transform.position = new Vector3(Target.position.x, Target.position.y, -10);
-        }
-        transform.position = new Vector3(transform.position.x, transform.position.y, -10);
+        transform.position = new Vector3(Criteria.position.x + Offset.x, Criteria.position.y + Offset.y, -10);
     }
+   
     #region ChasingTarget
     public void ChasingTarget(float speed, Transform target, float chasingDst) {
         Target = target;
@@ -44,13 +44,12 @@ public class CameraController : MonoBehaviour
             while (true) {
                 if (Target == null)
                     break;
-                float dstTarget = Vector2.Distance(transform.position, Target.position);
+                float dstTarget = Vector2.Distance(Criteria.position, Target.position);
 
                 float minSpeed = Speed / 8;
                 float dstSpeed = dstTarget >= ChasingDst ? Speed : Mathf.Lerp(0, Speed, Mathf.Clamp(dstTarget / ChasingDst, 0, 1));
                 float speed = Mathf.Clamp(dstSpeed, minSpeed, Speed);
-                transform.position = Vector2.MoveTowards(transform.position, Target.position, speed * Time.deltaTime);
-                transform.position = new Vector3(transform.position.x, transform.position.y, -10);
+                Criteria.position = Vector2.MoveTowards(Criteria.position, Target.position, speed * Time.deltaTime);
 
                 yield return null;
             }
@@ -74,17 +73,18 @@ public class CameraController : MonoBehaviour
         if (UpdateTime <= 0) 
             UpdateTime = 0.01f;
         
-        CameraController mainCamera = Camera.main.GetComponent<CameraController>();
 
         WaitForSeconds waitSeconds = new WaitForSeconds(UpdateTime);
         while (Duration >= 0) {
             float Xpower = Random.Range(-Power, Power);
             float Ypower = Random.Range(-Power, Power);
-            mainCamera.transform.localPosition = new Vector3(mainCamera.transform.position.x + Xpower, mainCamera.transform.position.y + Ypower, -10);
+            Offset = new Vector2(Xpower, Ypower);
+            //transform.localPosition = new Vector3(Criteria.transform.position.x + Xpower, Criteria.transform.position.y + Ypower, -10);
             yield return waitSeconds;
             Duration -= UpdateTime;
             Power = Mathf.Lerp(0, power, Duration / duration);
         }
+        Offset = new Vector2(0, 0);
     }
     public void NotReduceShakeCamera(float duration, float power, float updateTime) {
         StartCoroutine(C_NotReduceShakeCamera(duration, power, updateTime));

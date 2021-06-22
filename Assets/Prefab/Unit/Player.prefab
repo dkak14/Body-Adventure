@@ -52,6 +52,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -116,14 +117,24 @@ MonoBehaviour:
   PlayerSprites:
   - sprite: {fileID: 21300000, guid: 695eb3877c195744f8f7eab8547d5e2d, type: 3}
     PlayerScale: {x: 1, y: 1}
+    beatCul: 1
+    beatVolume: 0.3
   - sprite: {fileID: 21300000, guid: 31dd95c33e7de8e4f9aaa6b152f8ceb4, type: 3}
     PlayerScale: {x: 1.2, y: 1.2}
+    beatCul: 1
+    beatVolume: 0.55
   - sprite: {fileID: 21300000, guid: a9544e9e8fe3e484290f4e1b96cb3ab9, type: 3}
     PlayerScale: {x: 1.4, y: 1.4}
+    beatCul: 1
+    beatVolume: 0.75
   - sprite: {fileID: 21300000, guid: db3f97fb6eedfda4baf724c6c99fc3c0, type: 3}
     PlayerScale: {x: 1.6, y: 1.6}
+    beatCul: 1
+    beatVolume: 1
   - sprite: {fileID: 21300000, guid: 9fbb91c8acfb622408eb8265779b35a3, type: 3}
     PlayerScale: {x: 1.8, y: 1.8}
+    beatCul: 2.5
+    beatVolume: 0
   speed: 3
   MinSpeed: 0.2
   DieParticle: {fileID: 6550788085158599336, guid: 1efd3a9214022c44d8af9528e72dd979,

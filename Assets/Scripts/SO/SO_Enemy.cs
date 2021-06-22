@@ -20,7 +20,7 @@ public class SO_Enemy : ScriptableObject
     [SerializeField, Header("디버프 줄건지 준다면 체크 아니면 해제")]
     bool isDebuff = false;
     public bool IsDebuff { get { return isDebuff; } }
-    [SerializeField, Header("디버프 최대 스택"), Range(0, 11)]
+    [SerializeField, Header("디버프 최대 스택"), Range(0, 100)]
     int maxStack = 1;
     public int MaxStack { get { return maxStack; } }
     [SerializeField, Header("디버프 스택1당 감소시킬 속도 퍼센트"),Range((float)0,1)]

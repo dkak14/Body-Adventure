@@ -31408,7 +31408,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IntParameter_Interp_m6BD62B80A6BCBA88761
 		int32_t L_1 = ___to1;
 		int32_t L_2 = ___from0;
 		float L_3 = ___t2;
-		((VolumeParameter_1_tDB3E73C28039660FD6C204191A4FDFA8EFBEC0F7 *)__this)->set_m_Value_2(((int32_t)((int32_t)((float)il2cpp_codegen_add((float)((float)((float)L_0)), (float)((float)il2cpp_codegen_multiply((float)((float)((float)((int32_t)il2cpp_codegen_subtract((int32_t)L_1, (int32_t)L_2)))), (float)L_3)))))));
+		((VolumeParameter_1_tDB3E73C28039660FD6C204191A4FDFA8EFBEC0F7 *)__this)->set_m_Value_2(il2cpp_codegen_cast_double_to_int<int32_t>(((float)il2cpp_codegen_add((float)((float)((float)L_0)), (float)((float)il2cpp_codegen_multiply((float)((float)((float)((int32_t)il2cpp_codegen_subtract((int32_t)L_1, (int32_t)L_2)))), (float)L_3))))));
 		// }
 		return;
 	}

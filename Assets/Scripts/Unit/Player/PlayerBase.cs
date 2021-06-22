@@ -8,7 +8,11 @@ using UnityEngine.Experimental.Rendering.Universal;
 [Serializable]
 public class PlayerSprite {
     public Sprite sprite = null;
-    public Vector2 PlayerScale = new Vector2(1,1);
+    public Vector2 PlayerScale = new Vector2(1, 1);
+    [SerializeField] float beatCul = 1;
+    public float BeatCul { get { return beatCul; } }
+    [SerializeField, Range(0,1)] float beatVolume = 1;
+    public float BeatVolume { get { return beatVolume; } }
 }
 class SpeedDeBuff {
     PlayerBase Target;
@@ -68,6 +72,7 @@ public class PlayerBase : UnitBase
     protected override void Start() {
         base.Start();
         StartCoroutine(SpeedBuffTimer());
+        StartCoroutine(HeartBeat());
         EventManager<PlayerEvent>.Instance.AddListener(PlayerEvent.KillPlayer, this, asdf);
         EventManager<GameEvent>.Instance.AddListener(GameEvent.ChangeStageStart,this, ChangeStageStart);
     }
@@ -81,9 +86,11 @@ public class PlayerBase : UnitBase
     private void OnDisable() {
         EventManager<PlayerEvent>.Instance.RemoveEvent(PlayerEvent.KillPlayer, asdf);
     }
-    public void Update() {
-        if (Input.GetKeyDown(KeyCode.K)) {
-            Die();
+    IEnumerator HeartBeat() {
+        while (true) {
+            float beatCul = PlayerSprites[hp].BeatCul;
+            yield return new WaitForSeconds(beatCul);
+            SoundManager.Instance.PlayEffect("HeartBeat", PlayerSprites[hp].BeatVolume);
         }
     }
 
@@ -127,7 +134,7 @@ public class PlayerBase : UnitBase
         Vector2 Recoilvec = (transform.position - attacker.transform.position).normalized;
         PushPlayer(Recoilvec, 1);
         spriteRenderer.DOKill();
-        CameraController.Instance.ShakeCamera(transform, 0.5f, 0.2f, 0.05f);
+        CameraController.Instance.ShakeCamera(transform, 0.5f, 1f, 0.03f);
         StartCoroutine(C_Invincibility());
         EventManager<PlayerEvent>.Instance.PostEvent(PlayerEvent.Damaged, this, power);
     }
@@ -154,7 +161,7 @@ public class PlayerBase : UnitBase
         spriteRenderer.sprite = PlayerSprites[PlayerSprites.Count - 1].sprite;
         gameObject.tag = "Invincibility";
         gameObject.layer = LayerMask.NameToLayer("Invincibility");
-        CameraController.Instance.ShakeCamera(1, 1, 0.05f);
+        CameraController.Instance.ShakeCamera(1, 1.5f, 0.03f);
         StartCoroutine(DieEffect(2));
     }
     IEnumerator DieEffect(float waitTime) {

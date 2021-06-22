@@ -23,6 +23,7 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -31,9 +32,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -50,13 +51,16 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -111,7 +115,34 @@ TextureImporter:
     serializedVersion: 2
     sprites: []
     outline: []
-    physicsShape: []
+    physicsShape:
+    - - {x: 48, y: -33.5}
+      - {x: 35, y: -35.5}
+      - {x: 48, y: 19.5}
+      - {x: 52, y: 79.5}
+      - {x: 36, y: 122.5}
+      - {x: 17, y: 136.5}
+      - {x: -9, y: 137.5}
+      - {x: -26, y: 123.5}
+      - {x: -40, y: 85.5}
+      - {x: -38, y: 54.5}
+      - {x: -35, y: -22.5}
+      - {x: -46, y: -13.5}
+      - {x: -56, y: -40.5}
+      - {x: -50, y: -48.5}
+      - {x: -37, y: -49.5}
+      - {x: -38, y: -74.5}
+      - {x: -70, y: -94.5}
+      - {x: -42, y: -108.5}
+      - {x: -51, y: -135.5}
+      - {x: -50, y: -179.5}
+      - {x: 59, y: -179.5}
+      - {x: 59, y: -164.5}
+      - {x: 35, y: -118.5}
+      - {x: 40, y: -111.5}
+      - {x: 30, y: -101.5}
+      - {x: 30, y: -77.5}
+      - {x: 34, y: -76.5}
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
     internalID: 0

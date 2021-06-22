@@ -14559,7 +14559,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MultipleDisplayUtilities_GetRelativeMous
 		float L_8 = L_7.get_z_4();
 		// if (currentDisplayIndex != pressDisplayIndex)
 		int32_t L_9 = V_0;
-		if ((((int32_t)((int32_t)((int32_t)L_8))) == ((int32_t)L_9)))
+		if ((((int32_t)il2cpp_codegen_cast_double_to_int<int32_t>(L_8)) == ((int32_t)L_9)))
 		{
 			goto IL_0029;
 		}
@@ -15820,7 +15820,7 @@ IL_0014:
 		NullCheck(L_2);
 		float L_3;
 		L_3 = Camera_get_depth_m063B48665DB9226949AC3A615362EA20193B823D(L_2, /*hidden argument*/NULL);
-		return ((int32_t)((int32_t)L_3));
+		return il2cpp_codegen_cast_double_to_int<int32_t>(L_3);
 	}
 }
 // System.Int32 UnityEngine.EventSystems.PhysicsRaycaster::get_finalEventMask()
@@ -15966,7 +15966,7 @@ IL_0010:
 		int32_t* L_9 = ___eventDisplayIndex2;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_10 = V_0;
 		float L_11 = L_10.get_z_4();
-		*((int32_t*)L_9) = (int32_t)((int32_t)((int32_t)L_11));
+		*((int32_t*)L_9) = (int32_t)il2cpp_codegen_cast_double_to_int<int32_t>(L_11);
 		// if (eventDisplayIndex != eventCamera.targetDisplay)
 		int32_t* L_12 = ___eventDisplayIndex2;
 		int32_t L_13 = *((int32_t*)L_12);

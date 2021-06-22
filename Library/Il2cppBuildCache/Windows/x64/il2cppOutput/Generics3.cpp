@@ -43276,7 +43276,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ConditionalWeakTable_2_Rehash_m7093BE8BC
 		int32_t L_0 = (int32_t)__this->get_size_2();
 		IL2CPP_RUNTIME_CLASS_INIT(HashHelpers_t001D7D03DA7A3C3426744B45509316917E7A90F9_il2cpp_TypeInfo_var);
 		int32_t L_1;
-		L_1 = HashHelpers_GetPrime_m011AA1E1C23994FC160C25F3AD051749CA8BA48F((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((float)((float)((float)((float)L_0))/(float)(0.699999988f)))))<<(int32_t)1))|(int32_t)1)), /*hidden argument*/NULL);
+		L_1 = HashHelpers_GetPrime_m011AA1E1C23994FC160C25F3AD051749CA8BA48F((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)il2cpp_codegen_cast_double_to_int<int32_t>(((float)((float)((float)((float)L_0))/(float)(0.699999988f))))<<(int32_t)1))|(int32_t)1)), /*hidden argument*/NULL);
 		V_0 = (uint32_t)L_1;
 		uint32_t L_2 = V_0;
 		EphemeronU5BU5D_tA2F880A59471B7642CA02323CD56295126FC28A8* L_3 = (EphemeronU5BU5D_tA2F880A59471B7642CA02323CD56295126FC28A8*)__this->get_data_0();

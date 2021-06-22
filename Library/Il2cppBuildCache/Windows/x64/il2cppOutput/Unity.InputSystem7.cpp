@@ -21812,7 +21812,7 @@ IL_0036:
 	{
 		// case JsonValueType.Real: return (long)realValue;
 		double L_4 = __this->get_realValue_2();
-		return ((int64_t)((int64_t)L_4));
+		return il2cpp_codegen_cast_double_to_int<int64_t>(L_4);
 	}
 
 IL_003e:

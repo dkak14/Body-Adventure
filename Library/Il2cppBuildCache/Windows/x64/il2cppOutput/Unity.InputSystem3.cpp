@@ -22504,7 +22504,7 @@ IL_0052:
 		// var intValue = (int)(value * maxValue);
 		float L_15 = ___value1;
 		int32_t L_16 = V_1;
-		V_2 = ((int32_t)((int32_t)((float)il2cpp_codegen_multiply((float)L_15, (float)((float)((float)L_16))))));
+		V_2 = il2cpp_codegen_cast_double_to_int<int32_t>(((float)il2cpp_codegen_multiply((float)L_15, (float)((float)((float)L_16)))));
 		// MemoryHelpers.WriteIntFromMultipleBits(valuePtr, bitOffset, sizeInBits, intValue);
 		uint8_t* L_17 = V_0;
 		uint32_t L_18;
@@ -22535,7 +22535,7 @@ IL_007a:
 		// *(short*)valuePtr = (short)(value * 32768.0f);
 		uint8_t* L_24 = V_0;
 		float L_25 = ___value1;
-		*((int16_t*)L_24) = (int16_t)((int16_t)((int16_t)((float)il2cpp_codegen_multiply((float)L_25, (float)(32768.0f)))));
+		*((int16_t*)L_24) = (int16_t)il2cpp_codegen_cast_double_to_int<int16_t>(((float)il2cpp_codegen_multiply((float)L_25, (float)(32768.0f))));
 		// }
 		return;
 	}
@@ -22604,7 +22604,7 @@ IL_00d1:
 		// *(sbyte*)valuePtr = (sbyte)(value * 128.0f);
 		uint8_t* L_39 = V_0;
 		float L_40 = ___value1;
-		*((int8_t*)L_39) = (int8_t)((int8_t)((int8_t)((float)il2cpp_codegen_multiply((float)L_40, (float)(128.0f)))));
+		*((int8_t*)L_39) = (int8_t)il2cpp_codegen_cast_double_to_int<int8_t>(((float)il2cpp_codegen_multiply((float)L_40, (float)(128.0f))));
 		// }
 		return;
 	}
@@ -22724,7 +22724,7 @@ IL_0045:
 		float L_12 = ___value0;
 		int32_t L_13 = V_0;
 		PrimitiveValue_tB787C76E9A37444599C45519DD7E4D3A1D4730C8  L_14;
-		L_14 = PrimitiveValue_op_Implicit_m7F42D08EFF4110E852E0ED056F4D6B236D16F233(((int32_t)((int32_t)((float)il2cpp_codegen_multiply((float)L_12, (float)((float)((float)L_13)))))), /*hidden argument*/NULL);
+		L_14 = PrimitiveValue_op_Implicit_m7F42D08EFF4110E852E0ED056F4D6B236D16F233(il2cpp_codegen_cast_double_to_int<int32_t>(((float)il2cpp_codegen_multiply((float)L_12, (float)((float)((float)L_13))))), /*hidden argument*/NULL);
 		return L_14;
 	}
 
@@ -22746,7 +22746,7 @@ IL_005e:
 		// return (int)(value * 2147483647.0f);
 		float L_18 = ___value0;
 		PrimitiveValue_tB787C76E9A37444599C45519DD7E4D3A1D4730C8  L_19;
-		L_19 = PrimitiveValue_op_Implicit_m7F42D08EFF4110E852E0ED056F4D6B236D16F233(((int32_t)((int32_t)((float)il2cpp_codegen_multiply((float)L_18, (float)(2.14748365E+09f))))), /*hidden argument*/NULL);
+		L_19 = PrimitiveValue_op_Implicit_m7F42D08EFF4110E852E0ED056F4D6B236D16F233(il2cpp_codegen_cast_double_to_int<int32_t>(((float)il2cpp_codegen_multiply((float)L_18, (float)(2.14748365E+09f)))), /*hidden argument*/NULL);
 		return L_19;
 	}
 
@@ -22790,7 +22790,7 @@ IL_009e:
 		// return (short)(value * 32768.0f);
 		float L_28 = ___value0;
 		PrimitiveValue_tB787C76E9A37444599C45519DD7E4D3A1D4730C8  L_29;
-		L_29 = PrimitiveValue_op_Implicit_mEC1B1DEFF6EDE2701045213E4E73270EE49B48B0(((int16_t)((int16_t)((float)il2cpp_codegen_multiply((float)L_28, (float)(32768.0f))))), /*hidden argument*/NULL);
+		L_29 = PrimitiveValue_op_Implicit_mEC1B1DEFF6EDE2701045213E4E73270EE49B48B0(il2cpp_codegen_cast_double_to_int<int16_t>(((float)il2cpp_codegen_multiply((float)L_28, (float)(32768.0f)))), /*hidden argument*/NULL);
 		return L_29;
 	}
 
@@ -22856,7 +22856,7 @@ IL_00fe:
 		// return (sbyte)(value * 128.0f);
 		float L_43 = ___value0;
 		PrimitiveValue_tB787C76E9A37444599C45519DD7E4D3A1D4730C8  L_44;
-		L_44 = PrimitiveValue_op_Implicit_m5DBE8ECAE866C28D29CD3A2D6C16653BBD5D566F(((int8_t)((int8_t)((float)il2cpp_codegen_multiply((float)L_43, (float)(128.0f))))), /*hidden argument*/NULL);
+		L_44 = PrimitiveValue_op_Implicit_m5DBE8ECAE866C28D29CD3A2D6C16653BBD5D566F(il2cpp_codegen_cast_double_to_int<int8_t>(((float)il2cpp_codegen_multiply((float)L_43, (float)(128.0f)))), /*hidden argument*/NULL);
 		return L_44;
 	}
 
@@ -23369,7 +23369,7 @@ IL_0057:
 		// var intValue = (int)(value * maxValue);
 		double L_15 = ___value1;
 		int32_t L_16 = V_1;
-		V_2 = ((int32_t)((int32_t)((double)il2cpp_codegen_multiply((double)L_15, (double)((double)((double)L_16))))));
+		V_2 = il2cpp_codegen_cast_double_to_int<int32_t>(((double)il2cpp_codegen_multiply((double)L_15, (double)((double)((double)L_16)))));
 		// MemoryHelpers.WriteIntFromMultipleBits(valuePtr, bitOffset, sizeInBits, intValue);
 		uint8_t* L_17 = V_0;
 		uint32_t L_18;
@@ -23400,7 +23400,7 @@ IL_007f:
 		// *(short*)valuePtr = (short)(value * 32768.0f);
 		uint8_t* L_24 = V_0;
 		double L_25 = ___value1;
-		*((int16_t*)L_24) = (int16_t)((int16_t)((int16_t)((double)il2cpp_codegen_multiply((double)L_25, (double)(32768.0)))));
+		*((int16_t*)L_24) = (int16_t)il2cpp_codegen_cast_double_to_int<int16_t>(((double)il2cpp_codegen_multiply((double)L_25, (double)(32768.0))));
 		// }
 		return;
 	}
@@ -23469,7 +23469,7 @@ IL_00e2:
 		// *(sbyte*)valuePtr = (sbyte)(value * 128.0f);
 		uint8_t* L_39 = V_0;
 		double L_40 = ___value1;
-		*((int8_t*)L_39) = (int8_t)((int8_t)((int8_t)((double)il2cpp_codegen_multiply((double)L_40, (double)(128.0)))));
+		*((int8_t*)L_39) = (int8_t)il2cpp_codegen_cast_double_to_int<int8_t>(((double)il2cpp_codegen_multiply((double)L_40, (double)(128.0))));
 		// }
 		return;
 	}

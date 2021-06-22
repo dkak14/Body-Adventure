@@ -49,6 +49,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -92,7 +93,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4646169029054676552}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -135,10 +136,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stun: 0
   SOMovingLump: {fileID: 11400000, guid: 3c9ab8a7f214e86448f70f4c6a8aefa6, type: 2}
-  MoveDuration: 1
+  MoveDuration: 2
   NextMoveTime: 0.1
   MoveStartRed: 1
   HandleSize: 0.3
   EaseType: 4
   Point1: {x: -9.347395, y: 13.053259}
   Point2: {x: -9.359486, y: 11.03939}
+  Preview: 0

@@ -17,7 +17,7 @@ MonoBehaviour:
   pushPlayer: 0
   power: 1
   isDebuff: 0
-  maxStack: 5
-  slowPower: 0.2
+  maxStack: 50
+  slowPower: 0.02
   slowDuration: 5
-  contactTime: 2
+  contactTime: 0.2

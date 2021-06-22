@@ -49,6 +49,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -98,9 +99,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LumpObjectList:
   - {fileID: 438381010215056883, guid: de6582f7707a2c54b851551a951b46b9, type: 3}
-  ShotLumpCulTime: 1
-  WallSensingRange: 4.33
-  SpawnLumpToWall: 0.96
+  ShotLumpCulTime: 2
+  WallSensingRange: 5
+  SpawnLumpToWall: 1.2
   SensingLineColor: {r: 1, g: 0, b: 0, a: 1}
   SpawnLumpToWallColor: {r: 0, g: 0, b: 1, a: 1}
   ShotLumpAngle: 270
@@ -110,6 +111,8 @@ MonoBehaviour:
   GastrinDirColor: {r: 1, g: 0, b: 1, a: 1}
   LineColor: {r: 0, g: 1, b: 0, a: 1}
   isShotLump: 1
+  SoundCul: 6
+  LumpSpeed: 3
 --- !u!50 &6492543147042118146
 Rigidbody2D:
   serializedVersion: 4

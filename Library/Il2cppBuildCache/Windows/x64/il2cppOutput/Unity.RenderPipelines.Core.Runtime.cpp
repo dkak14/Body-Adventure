@@ -25110,7 +25110,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CoreUtils_ClearCubemap_m9B3E09EAF4539C53
 		L_4 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_3);
 		float L_5;
 		L_5 = Mathf_Log_mF7F3624FA030AB57AD8C1F4CAF084B2DCC99897A(((float)((float)L_4)), (2.0f), /*hidden argument*/NULL);
-		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)((int32_t)((int32_t)L_5)), (int32_t)1));
+		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)il2cpp_codegen_cast_double_to_int<int32_t>(L_5), (int32_t)1));
 	}
 
 IL_0021:

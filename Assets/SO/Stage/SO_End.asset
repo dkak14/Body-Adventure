@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SO_End
   m_EditorClassIdentifier: 
   sceneName: End
-  bgm: {fileID: 8300000, guid: 0fd6e1b5682638849bdf737890c07449, type: 3}
+  bgm: {fileID: 0}
   fadeInEffectName: NormalFadeEffect
   fadeInDuration: 10
   isNormalJoin: 0

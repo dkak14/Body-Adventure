@@ -12,10 +12,6 @@ public class PlayerController : MonoBehaviour
         playerBase = GetComponent<PlayerBase>();
         rigid = GetComponent<Rigidbody2D>();
     }
-    void Update()
-    {
-
-    }
     private void FixedUpdate() {
         Vector3 Target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if (!playerBase.stun && Input.GetMouseButton(0)) {
@@ -24,10 +20,11 @@ public class PlayerController : MonoBehaviour
             float dstSpeed = dstTarget >= StartMaxSpeedDst ? playerBase.Speed : Mathf.Lerp(0, playerBase.Speed, Mathf.Clamp(dstTarget / StartMaxSpeedDst, 0, 1));
             float speed = Mathf.Clamp(dstSpeed, minSpeed, playerBase.Speed);
             Vector2 mouseDIr = ((Vector2)Target - (Vector2)transform.position).normalized;
-            Vector2 movePos = (Vector2)transform.position + mouseDIr * speed * Time.deltaTime;
+            Vector2 movePos = (Vector2)transform.position + mouseDIr * (speed * Time.deltaTime);
             rigid.MovePosition(movePos);
         }
         if(CameraController.Instance != null)
         CameraController.Instance.Speed = playerBase.Speed + 1;
     }
+    
 }

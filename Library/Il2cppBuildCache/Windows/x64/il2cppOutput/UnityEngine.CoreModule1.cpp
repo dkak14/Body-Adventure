@@ -12037,10 +12037,14 @@ public:
 	bool ___U3CrendererProbesU3Ek__BackingField_21;
 	// System.Boolean UnityEngine.Rendering.SupportedRenderingFeatures::<particleSystemInstancing>k__BackingField
 	bool ___U3CparticleSystemInstancingU3Ek__BackingField_22;
+	// System.Boolean UnityEngine.Rendering.SupportedRenderingFeatures::<autoAmbientProbeBaking>k__BackingField
+	bool ___U3CautoAmbientProbeBakingU3Ek__BackingField_23;
+	// System.Boolean UnityEngine.Rendering.SupportedRenderingFeatures::<autoDefaultReflectionProbeBaking>k__BackingField
+	bool ___U3CautoDefaultReflectionProbeBakingU3Ek__BackingField_24;
 	// System.Boolean UnityEngine.Rendering.SupportedRenderingFeatures::<overridesShadowmask>k__BackingField
-	bool ___U3CoverridesShadowmaskU3Ek__BackingField_23;
+	bool ___U3CoverridesShadowmaskU3Ek__BackingField_25;
 	// System.String UnityEngine.Rendering.SupportedRenderingFeatures::<overrideShadowmaskMessage>k__BackingField
-	String_t* ___U3CoverrideShadowmaskMessageU3Ek__BackingField_24;
+	String_t* ___U3CoverrideShadowmaskMessageU3Ek__BackingField_26;
 
 public:
 	inline static int32_t get_offset_of_U3CreflectionProbeModesU3Ek__BackingField_1() { return static_cast<int32_t>(offsetof(SupportedRenderingFeatures_t751F1D338419E1CFAF4A3F7CE61B52075D72AF54, ___U3CreflectionProbeModesU3Ek__BackingField_1)); }
@@ -12219,21 +12223,37 @@ public:
 		___U3CparticleSystemInstancingU3Ek__BackingField_22 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CoverridesShadowmaskU3Ek__BackingField_23() { return static_cast<int32_t>(offsetof(SupportedRenderingFeatures_t751F1D338419E1CFAF4A3F7CE61B52075D72AF54, ___U3CoverridesShadowmaskU3Ek__BackingField_23)); }
-	inline bool get_U3CoverridesShadowmaskU3Ek__BackingField_23() const { return ___U3CoverridesShadowmaskU3Ek__BackingField_23; }
-	inline bool* get_address_of_U3CoverridesShadowmaskU3Ek__BackingField_23() { return &___U3CoverridesShadowmaskU3Ek__BackingField_23; }
-	inline void set_U3CoverridesShadowmaskU3Ek__BackingField_23(bool value)
+	inline static int32_t get_offset_of_U3CautoAmbientProbeBakingU3Ek__BackingField_23() { return static_cast<int32_t>(offsetof(SupportedRenderingFeatures_t751F1D338419E1CFAF4A3F7CE61B52075D72AF54, ___U3CautoAmbientProbeBakingU3Ek__BackingField_23)); }
+	inline bool get_U3CautoAmbientProbeBakingU3Ek__BackingField_23() const { return ___U3CautoAmbientProbeBakingU3Ek__BackingField_23; }
+	inline bool* get_address_of_U3CautoAmbientProbeBakingU3Ek__BackingField_23() { return &___U3CautoAmbientProbeBakingU3Ek__BackingField_23; }
+	inline void set_U3CautoAmbientProbeBakingU3Ek__BackingField_23(bool value)
 	{
-		___U3CoverridesShadowmaskU3Ek__BackingField_23 = value;
+		___U3CautoAmbientProbeBakingU3Ek__BackingField_23 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CoverrideShadowmaskMessageU3Ek__BackingField_24() { return static_cast<int32_t>(offsetof(SupportedRenderingFeatures_t751F1D338419E1CFAF4A3F7CE61B52075D72AF54, ___U3CoverrideShadowmaskMessageU3Ek__BackingField_24)); }
-	inline String_t* get_U3CoverrideShadowmaskMessageU3Ek__BackingField_24() const { return ___U3CoverrideShadowmaskMessageU3Ek__BackingField_24; }
-	inline String_t** get_address_of_U3CoverrideShadowmaskMessageU3Ek__BackingField_24() { return &___U3CoverrideShadowmaskMessageU3Ek__BackingField_24; }
-	inline void set_U3CoverrideShadowmaskMessageU3Ek__BackingField_24(String_t* value)
+	inline static int32_t get_offset_of_U3CautoDefaultReflectionProbeBakingU3Ek__BackingField_24() { return static_cast<int32_t>(offsetof(SupportedRenderingFeatures_t751F1D338419E1CFAF4A3F7CE61B52075D72AF54, ___U3CautoDefaultReflectionProbeBakingU3Ek__BackingField_24)); }
+	inline bool get_U3CautoDefaultReflectionProbeBakingU3Ek__BackingField_24() const { return ___U3CautoDefaultReflectionProbeBakingU3Ek__BackingField_24; }
+	inline bool* get_address_of_U3CautoDefaultReflectionProbeBakingU3Ek__BackingField_24() { return &___U3CautoDefaultReflectionProbeBakingU3Ek__BackingField_24; }
+	inline void set_U3CautoDefaultReflectionProbeBakingU3Ek__BackingField_24(bool value)
 	{
-		___U3CoverrideShadowmaskMessageU3Ek__BackingField_24 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___U3CoverrideShadowmaskMessageU3Ek__BackingField_24), (void*)value);
+		___U3CautoDefaultReflectionProbeBakingU3Ek__BackingField_24 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CoverridesShadowmaskU3Ek__BackingField_25() { return static_cast<int32_t>(offsetof(SupportedRenderingFeatures_t751F1D338419E1CFAF4A3F7CE61B52075D72AF54, ___U3CoverridesShadowmaskU3Ek__BackingField_25)); }
+	inline bool get_U3CoverridesShadowmaskU3Ek__BackingField_25() const { return ___U3CoverridesShadowmaskU3Ek__BackingField_25; }
+	inline bool* get_address_of_U3CoverridesShadowmaskU3Ek__BackingField_25() { return &___U3CoverridesShadowmaskU3Ek__BackingField_25; }
+	inline void set_U3CoverridesShadowmaskU3Ek__BackingField_25(bool value)
+	{
+		___U3CoverridesShadowmaskU3Ek__BackingField_25 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CoverrideShadowmaskMessageU3Ek__BackingField_26() { return static_cast<int32_t>(offsetof(SupportedRenderingFeatures_t751F1D338419E1CFAF4A3F7CE61B52075D72AF54, ___U3CoverrideShadowmaskMessageU3Ek__BackingField_26)); }
+	inline String_t* get_U3CoverrideShadowmaskMessageU3Ek__BackingField_26() const { return ___U3CoverrideShadowmaskMessageU3Ek__BackingField_26; }
+	inline String_t** get_address_of_U3CoverrideShadowmaskMessageU3Ek__BackingField_26() { return &___U3CoverrideShadowmaskMessageU3Ek__BackingField_26; }
+	inline void set_U3CoverrideShadowmaskMessageU3Ek__BackingField_26(String_t* value)
+	{
+		___U3CoverrideShadowmaskMessageU3Ek__BackingField_26 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CoverrideShadowmaskMessageU3Ek__BackingField_26), (void*)value);
 	}
 };
 

@@ -11,16 +11,36 @@ public class Portal : MonoBehaviour
     [SerializeField] string FadeEffectName = "NormalFadeEffect";
     [SerializeField] float FadeEffectDuration = 2;
     [SerializeField] Vector2 ColliderSize = new Vector2(1, 1);
+    [SerializeField,Range(0.1f,10)] float ShakeCameraCul = 1;
+    [SerializeField] float ShakeDuration = 0;
+    [SerializeField] float ShakePower = 0;
+    [SerializeField] float ShakePowerPlus = 0;
     bool GoStage = false;
     private void Update() {
         Collider2D[] colliders = Physics2D.OverlapBoxAll(transform.position, ColliderSize, 0);
         foreach(Collider2D collider in colliders) {
             if (GoStage == false) {
-                if (collider.tag == "Player") {
+                if (collider.tag == "Player" || collider.tag == "Invincibility") {
                     SceneUtilityManager.Instance.FadeAndSceneChange(SceneName, FadeEffectName, FadeEffectDuration);
+                    Shake();
                     GoStage = true;
                 }
             }
+        }
+    }
+    void Shake() {
+        if (ShakeDuration == 0 || ShakePower == 0)
+            return;
+
+        StartCoroutine(C_Shake());
+    }
+    IEnumerator C_Shake() {
+        SoundManager.Instance.BGMFadeOut(FadeEffectDuration - 1f);
+        float Power = ShakePower;
+        while (true) {
+            CameraController.Instance.ShakeCamera(ShakeDuration, Power, 0.03f);
+            Power += ShakePowerPlus;
+            yield return new WaitForSeconds(ShakeCameraCul);
         }
     }
     public void OnDrawGizmos() {

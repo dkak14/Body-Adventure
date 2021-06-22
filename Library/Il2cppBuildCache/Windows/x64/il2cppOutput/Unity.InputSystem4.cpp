@@ -47065,14 +47065,14 @@ IL_0095:
 	{
 		// return (long)m_FloatValue;
 		float L_12 = __this->get_m_FloatValue_11();
-		return ((int64_t)((int64_t)L_12));
+		return il2cpp_codegen_cast_double_to_int<int64_t>(L_12);
 	}
 
 IL_009d:
 	{
 		// return (long)m_DoubleValue;
 		double L_13 = __this->get_m_DoubleValue_12();
-		return ((int64_t)((int64_t)L_13));
+		return il2cpp_codegen_cast_double_to_int<int64_t>(L_13);
 	}
 
 IL_00a5:

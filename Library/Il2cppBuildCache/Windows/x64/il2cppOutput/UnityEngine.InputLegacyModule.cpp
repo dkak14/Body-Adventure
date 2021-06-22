@@ -2030,7 +2030,7 @@ IL_00bc:
 	{
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_38 = V_10;
 		float L_39 = L_38.get_z_4();
-		V_19 = ((int32_t)((int32_t)L_39));
+		V_19 = il2cpp_codegen_cast_double_to_int<int32_t>(L_39);
 		int32_t L_40 = V_19;
 		int32_t L_41 = V_9;
 		V_23 = (bool)((((int32_t)((((int32_t)L_40) == ((int32_t)L_41))? 1 : 0)) == ((int32_t)0))? 1 : 0);

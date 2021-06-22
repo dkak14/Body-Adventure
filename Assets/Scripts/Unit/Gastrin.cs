@@ -22,27 +22,29 @@ public class Gastrin : MonoBehaviour
     [SerializeField] Color GastrinDirColor = Color.magenta;
     [SerializeField] Color LineColor = Color.green;
     [SerializeField] bool isShotLump = true;
-
+    [SerializeField] float SoundCul = 6;
+    [SerializeField] float LumpSpeed = 5;
     Vector2 RightWallPos = Vector2.zero;
     Vector2 LeftWallPos = Vector2.zero;
     Vector2 RightSpawnRange = Vector2.zero;
     Vector2 LeftSpawnRange = Vector2.zero;
     private void Start() {
         StartCoroutine(ShotLump());
+        StartCoroutine(Sound());
     }
 
     IEnumerator ShotLump() {
         while (true) {
-            yield return new WaitForSeconds(ShotLumpCulTime);
-
+            yield return null;
             if (!isShotLump)
                 continue;
+            yield return new WaitForSeconds(ShotLumpCulTime);
             Vector2 spawnPos = Vector2.Lerp(RightSpawnRange, LeftSpawnRange, Random.Range((float)0, 1));
             float angle1 = ShotLumpAngle + AngleRange / 2;
             float angle2 = ShotLumpAngle - AngleRange / 2;
             if (angle2 <= transform.eulerAngles.z && transform.eulerAngles.z <= angle1) {
                 Lump randomLump = LumpObjectList[Random.Range(0, LumpObjectList.Count)];
-                randomLump.SetLump(transform.eulerAngles.z, 2);
+                randomLump.SetLump(transform.eulerAngles.z, LumpSpeed);
                 Instantiate(randomLump, spawnPos, Quaternion.identity);
             }
         }
@@ -156,6 +158,20 @@ public class Gastrin : MonoBehaviour
             float Dst = Mathf.Clamp((WallSensingRange - SpawnLumpToWall), 0, WallSensingRange);
             Vector2 leftDir = transformPosition + new Vector2(Mathf.Cos(lefttheta), Mathf.Sin(lefttheta)) * Dst;
             Gizmos.DrawLine(transformPosition, leftDir);
+        }
+    }
+    IEnumerator Sound() {
+        bool startSound = false;
+        while (true) {
+            while (!startSound) {
+                startSound = SoundManager.Instance.PlayEffect("Gastrin", transform.position, 4);
+                yield return null;
+                Debug.Log("안됨");
+            }
+            Debug.Log("대기중");
+            yield return new WaitForSeconds(SoundCul);
+            startSound = false;
+            Debug.Log("됨");
         }
     }
     public void OnTriggerEnter2D(Collider2D collision) {

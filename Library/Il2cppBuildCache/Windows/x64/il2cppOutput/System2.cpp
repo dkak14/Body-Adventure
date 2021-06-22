@@ -4516,7 +4516,7 @@ IL_001b:
 		double L_4;
 		L_4 = TimeSpan_get_TotalMilliseconds_m97368AE0609D865EB2A6BAE96AAA97AF8BDBF1C5((TimeSpan_t4F6A0E13E703B65365CFCAB58E05EE0AF3EE6203 *)(&V_0), /*hidden argument*/NULL);
 		if (L_4 > (double)((std::numeric_limits<int64_t>::max)())) IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_overflow_exception(), Stopwatch_get_ElapsedMilliseconds_m6A137C9E989F74F61752FA86BB41ABAEC2A11FB5_RuntimeMethod_var);
-		return ((int64_t)((int64_t)L_4));
+		return il2cpp_codegen_cast_double_to_int<int64_t>(L_4);
 	}
 }
 // System.Int64 System.Diagnostics.Stopwatch::get_ElapsedTicks()

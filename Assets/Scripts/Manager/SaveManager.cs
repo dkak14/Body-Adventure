@@ -16,9 +16,7 @@ namespace GameSave {
         static string GetSaveFIlePath(string saveFolder, string fileName) {
             return GetSaveFolderPath(saveFolder) + '/' + fileName + ".dat";
         }
-        public static void StartData(Thread thread) {
-            thread.Start();
-        }
+
         static  public void SaveSerailizeData(string saveFolder, string fileName, SaveData saveData) {
             string folderPath = GetSaveFolderPath(saveFolder);
             string path = GetSaveFIlePath(saveFolder, fileName);

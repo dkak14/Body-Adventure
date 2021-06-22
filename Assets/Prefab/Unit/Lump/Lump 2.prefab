@@ -49,6 +49,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -118,8 +119,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.94, y: 0.7}
+  m_Offset: {x: 0.3, y: 0}
+  m_Size: {x: 1.33, y: 0.53}
   m_Direction: 1
 --- !u!114 &6461133557758821227
 MonoBehaviour:
@@ -136,4 +137,4 @@ MonoBehaviour:
   stun: 0
   SOLump: {fileID: 11400000, guid: 173ef9038af054047a8ec1a817e109b8, type: 2}
   StartAngle: 224.09633
-  Speed: 3
+  Speed: 8

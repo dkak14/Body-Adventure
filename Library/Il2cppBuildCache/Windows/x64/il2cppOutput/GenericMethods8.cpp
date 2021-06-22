@@ -28048,7 +28048,7 @@ IL_0017:
 		NullCheck(L_9);
 		float L_10 = (float)((Tween_tF17E40B3AD65D4E0C7E78D43A9224C6A1FC4C941 *)L_9)->get_easeOvershootOrAmplitude_32();
 		NullCheck(L_8);
-		((Tween_tF17E40B3AD65D4E0C7E78D43A9224C6A1FC4C941 *)L_8)->set_easeOvershootOrAmplitude_32(((float)((float)((int32_t)((int32_t)L_10)))));
+		((Tween_tF17E40B3AD65D4E0C7E78D43A9224C6A1FC4C941 *)L_8)->set_easeOvershootOrAmplitude_32(((float)((float)il2cpp_codegen_cast_double_to_int<int32_t>(L_10))));
 	}
 
 IL_0043:
@@ -28195,7 +28195,7 @@ IL_0017:
 	}
 	{
 		float L_8 = ___overshoot2;
-		___overshoot2 = (float)((float)((float)((int32_t)((int32_t)L_8))));
+		___overshoot2 = (float)((float)((float)il2cpp_codegen_cast_double_to_int<int32_t>(L_8)));
 	}
 
 IL_0030:
@@ -28254,7 +28254,7 @@ IL_0017:
 	}
 	{
 		float L_8 = ___amplitude2;
-		___amplitude2 = (float)((float)((float)((int32_t)((int32_t)L_8))));
+		___amplitude2 = (float)((float)((float)il2cpp_codegen_cast_double_to_int<int32_t>(L_8)));
 	}
 
 IL_0030:

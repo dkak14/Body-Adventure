@@ -17358,7 +17358,7 @@ IL_00bd:
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tA269614262430118C9FC5C4D9EF4F61C812568F0_il2cpp_TypeInfo_var);
 		double L_53;
 		L_53 = bankers_round(((double)((double)((float)il2cpp_codegen_multiply((float)((float)((float)L_41)), (float)L_52)))));
-		V_2 = ((int32_t)((int32_t)L_53));
+		V_2 = il2cpp_codegen_cast_double_to_int<int32_t>(L_53);
 		int32_t L_54 = V_2;
 		int32_t L_55 = V_1;
 		if ((((int32_t)L_54) <= ((int32_t)L_55)))
@@ -17498,7 +17498,7 @@ IL_018d:
 		int32_t L_102 = V_3;
 		int32_t L_103 = V_3;
 		float L_104 = V_6;
-		V_3 = ((int32_t)il2cpp_codegen_subtract((int32_t)L_102, (int32_t)((int32_t)((int32_t)((float)il2cpp_codegen_multiply((float)((float)((float)L_103)), (float)L_104))))));
+		V_3 = ((int32_t)il2cpp_codegen_subtract((int32_t)L_102, (int32_t)il2cpp_codegen_cast_double_to_int<int32_t>(((float)il2cpp_codegen_multiply((float)((float)((float)L_103)), (float)L_104)))));
 		goto IL_01ab;
 	}
 
@@ -28635,11 +28635,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenManager_IncreaseCapacities_m289AF45
 		IL2CPP_RUNTIME_CLASS_INIT(TweenManager_t3FB368091E5C88EE9C5F370B735BCEBD5EB00A5C_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((TweenManager_t3FB368091E5C88EE9C5F370B735BCEBD5EB00A5C_StaticFields*)il2cpp_codegen_static_fields_for(TweenManager_t3FB368091E5C88EE9C5F370B735BCEBD5EB00A5C_il2cpp_TypeInfo_var))->get_maxTweeners_7();
 		int32_t L_1;
-		L_1 = Mathf_Max_mAB2544BF70651EC36982F5F4EBD250AEE283335A(((int32_t)((int32_t)((float)il2cpp_codegen_multiply((float)((float)((float)L_0)), (float)(1.5f))))), ((int32_t)200), /*hidden argument*/NULL);
+		L_1 = Mathf_Max_mAB2544BF70651EC36982F5F4EBD250AEE283335A(il2cpp_codegen_cast_double_to_int<int32_t>(((float)il2cpp_codegen_multiply((float)((float)((float)L_0)), (float)(1.5f)))), ((int32_t)200), /*hidden argument*/NULL);
 		V_1 = L_1;
 		int32_t L_2 = ((TweenManager_t3FB368091E5C88EE9C5F370B735BCEBD5EB00A5C_StaticFields*)il2cpp_codegen_static_fields_for(TweenManager_t3FB368091E5C88EE9C5F370B735BCEBD5EB00A5C_il2cpp_TypeInfo_var))->get_maxSequences_8();
 		int32_t L_3;
-		L_3 = Mathf_Max_mAB2544BF70651EC36982F5F4EBD250AEE283335A(((int32_t)((int32_t)((float)il2cpp_codegen_multiply((float)((float)((float)L_2)), (float)(1.5f))))), ((int32_t)50), /*hidden argument*/NULL);
+		L_3 = Mathf_Max_mAB2544BF70651EC36982F5F4EBD250AEE283335A(il2cpp_codegen_cast_double_to_int<int32_t>(((float)il2cpp_codegen_multiply((float)((float)((float)L_2)), (float)(1.5f)))), ((int32_t)50), /*hidden argument*/NULL);
 		V_2 = L_3;
 		int32_t L_4 = ___increaseMode0;
 		if ((((int32_t)L_4) == ((int32_t)1)))

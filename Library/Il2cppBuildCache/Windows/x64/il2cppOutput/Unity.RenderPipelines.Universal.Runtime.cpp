@@ -23597,7 +23597,7 @@ IL_02f6:
 		int32_t L_79 = V_0;
 		float L_80;
 		L_80 = powf((4.0f), ((float)((float)L_79)));
-		V_1 = ((int32_t)((int32_t)L_80));
+		V_1 = il2cpp_codegen_cast_double_to_int<int32_t>(L_80);
 		// m_Tilers[tilerLevel] = new DeferredTiler(
 		//     DeferredConfig.kTilePixelWidth * scale,
 		//     DeferredConfig.kTilePixelHeight * scale,
@@ -25774,7 +25774,7 @@ IL_0036:
 		L_21 = Mathf_Min_m8038BC2CE141C9AF3ECA2E31B88A9768423B1519(L_19, L_20, /*hidden argument*/NULL);
 		float L_22;
 		L_22 = Mathf_Log_mF7F3624FA030AB57AD8C1F4CAF084B2DCC99897A(((float)((float)L_21)), (2.0f), /*hidden argument*/NULL);
-		V_6 = ((int32_t)((int32_t)L_22));
+		V_6 = il2cpp_codegen_cast_double_to_int<int32_t>(L_22);
 		// int intermediateMipLevel = DeferredConfig.kTileDepthInfoIntermediateLevel >= 0 && DeferredConfig.kTileDepthInfoIntermediateLevel < tileMipLevel ? DeferredConfig.kTileDepthInfoIntermediateLevel : tileMipLevel;
 		int32_t L_23 = V_6;
 		V_7 = L_23;
@@ -26472,7 +26472,7 @@ IL_0049:
 			int32_t L_17 = V_4;
 			float L_18;
 			L_18 = Mathf_Log_mF7F3624FA030AB57AD8C1F4CAF084B2DCC99897A(((float)((float)L_17)), (2.0f), /*hidden argument*/NULL);
-			V_6 = ((int32_t)((int32_t)L_18));
+			V_6 = il2cpp_codegen_cast_double_to_int<int32_t>(L_18);
 			// int tileHeightLevel = (int)Mathf.Log(tilePixelHeight, 2);
 			int32_t L_19 = V_5;
 			float L_20;
@@ -26485,7 +26485,7 @@ IL_0049:
 			V_8 = ((int32_t)il2cpp_codegen_subtract((int32_t)L_21, (int32_t)L_22));
 			// int diffHeightLevel = tileHeightLevel - intermediateMipLevel;
 			int32_t L_23 = V_7;
-			V_9 = ((int32_t)il2cpp_codegen_subtract((int32_t)((int32_t)((int32_t)L_20)), (int32_t)L_23));
+			V_9 = ((int32_t)il2cpp_codegen_subtract((int32_t)il2cpp_codegen_cast_double_to_int<int32_t>(L_20), (int32_t)L_23));
 			// cmd.SetGlobalTexture(ShaderConstants._BitmaskTex, depthInfoSurface);
 			CommandBuffer_t25CD231BD3E822660339DB7D0E8F8ED6B7DBEA29 * L_24 = V_0;
 			IL2CPP_RUNTIME_CLASS_INIT(ShaderConstants_t6074DF14669C6DAFDE050A96C94E3E7AA6A899E6_il2cpp_TypeInfo_var);
@@ -33706,7 +33706,7 @@ IL_045d:
 		float L_233 = V_50;
 		float L_234 = V_18;
 		float L_235 = V_21;
-		V_51 = ((int32_t)((int32_t)((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_subtract((float)L_233, (float)L_234)), (float)(32.0f))), (float)L_235))));
+		V_51 = il2cpp_codegen_cast_double_to_int<int32_t>(((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_subtract((float)L_233, (float)L_234)), (float)(32.0f))), (float)L_235)));
 		// int lastBit = (int)((lightMaxDepth - listMinDepth) * 32.0f * depthRangeInv);
 		float L_236 = V_18;
 		float L_237 = V_21;
@@ -33714,7 +33714,7 @@ IL_045d:
 		int32_t L_238 = V_51;
 		int32_t L_239 = V_51;
 		int32_t L_240;
-		L_240 = math_min_m44D70D51DA7252B2D252DCCF7D8321B81AACBB27_inline(((int32_t)il2cpp_codegen_add((int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)((int32_t)((int32_t)((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_subtract((float)L_232, (float)L_236)), (float)(32.0f))), (float)L_237)))), (int32_t)L_238)), (int32_t)1)), ((int32_t)il2cpp_codegen_subtract((int32_t)((int32_t)32), (int32_t)L_239)), /*hidden argument*/NULL);
+		L_240 = math_min_m44D70D51DA7252B2D252DCCF7D8321B81AACBB27_inline(((int32_t)il2cpp_codegen_add((int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)il2cpp_codegen_cast_double_to_int<int32_t>(((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_subtract((float)L_232, (float)L_236)), (float)(32.0f))), (float)L_237))), (int32_t)L_238)), (int32_t)1)), ((int32_t)il2cpp_codegen_subtract((int32_t)((int32_t)32), (int32_t)L_239)), /*hidden argument*/NULL);
 		V_52 = L_240;
 		// bitMask |= (uint)((0xFFFFFFFF >> (32 - bitCount)) << firstBit);
 		uint32_t L_241 = V_20;

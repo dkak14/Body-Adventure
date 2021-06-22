@@ -48,6 +48,8 @@ public class StageDataManager : DontDestroySingletonBehaviour<StageDataManager> 
 
                 if (StageDataList[i].BGM != null)
                     SoundManager.Instance.PlayBGM(StageDataList[i].BGM, 1, StageDataList[i].IsLoop);
+                else if (StageDataList[i].IsBeforeBGMOff)
+                    SoundManager.Instance.BGMOff();
                 return;
             }
         }

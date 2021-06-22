@@ -12927,7 +12927,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomTile_GetTileData_mFE1083EFB303DCAD
 		float L_21;
 		L_21 = Random_get_value_m9AEBC7DF0BB6C57C928B0798349A7D3C0B3FB872(/*hidden argument*/NULL);
 		NullCheck(L_19);
-		int32_t L_22 = ((int32_t)((int32_t)((float)il2cpp_codegen_multiply((float)((float)((float)((int32_t)((int32_t)(((RuntimeArray*)L_20)->max_length))))), (float)L_21))));
+		int32_t L_22 = il2cpp_codegen_cast_double_to_int<int32_t>(((float)il2cpp_codegen_multiply((float)((float)((float)((int32_t)((int32_t)(((RuntimeArray*)L_20)->max_length))))), (float)L_21)));
 		Sprite_t5B10B1178EC2E6F53D33FFD77557F31C08A51ED9 * L_23 = (L_19)->GetAt(static_cast<il2cpp_array_size_t>(L_22));
 		TileData_set_sprite_m24F99D8E52155C9E6F56B5CF647C7A423ACB76E8((TileData_tC1E1EE7E156EBC2D759086B44BC45C056BFEEAF6 *)L_18, L_23, /*hidden argument*/NULL);
 		// Random.state = oldState;

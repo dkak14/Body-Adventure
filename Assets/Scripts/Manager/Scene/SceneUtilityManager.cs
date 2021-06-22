@@ -62,6 +62,7 @@ public class SceneUtilityManager : DontDestroySingletonBehaviour<SceneUtilityMan
         fadeOutParameter[0] = duration;
         fadeOutParameter[1] = new Action[] { () => { SceneChange(sceneName); Time.timeScale = 1; } };
         methodFadeOut.Invoke(fadeEffect, fadeOutParameter);
+        EventManager<GameEvent>.Instance.PostEvent(GameEvent.ChangeStageStart, this, sceneName);
     }
     public bool IsGetScene(string sceneName) {
         return SceneManager.GetSceneByName(sceneName) != null ? true : false;

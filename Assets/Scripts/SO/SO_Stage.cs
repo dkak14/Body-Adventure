@@ -10,7 +10,8 @@ public class SO_Stage : ScriptableObject
     public string SceneName { get { return sceneName; } }
     [SerializeField] AudioClip bgm = null;
     public AudioClip BGM { get { return bgm; } }
-
+    [SerializeField] bool isBeforeBGMOff = true;
+    public bool IsBeforeBGMOff { get { return isBeforeBGMOff; } }
     [SerializeField] string fadeInEffectName = "NormalFadeEffect";
     public string FadeInEffectName { get { return fadeInEffectName; } }
 

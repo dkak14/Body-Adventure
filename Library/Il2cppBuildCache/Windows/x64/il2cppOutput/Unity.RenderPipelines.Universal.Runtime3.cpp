@@ -14450,10 +14450,14 @@ public:
 	bool ___U3CrendererProbesU3Ek__BackingField_21;
 	// System.Boolean UnityEngine.Rendering.SupportedRenderingFeatures::<particleSystemInstancing>k__BackingField
 	bool ___U3CparticleSystemInstancingU3Ek__BackingField_22;
+	// System.Boolean UnityEngine.Rendering.SupportedRenderingFeatures::<autoAmbientProbeBaking>k__BackingField
+	bool ___U3CautoAmbientProbeBakingU3Ek__BackingField_23;
+	// System.Boolean UnityEngine.Rendering.SupportedRenderingFeatures::<autoDefaultReflectionProbeBaking>k__BackingField
+	bool ___U3CautoDefaultReflectionProbeBakingU3Ek__BackingField_24;
 	// System.Boolean UnityEngine.Rendering.SupportedRenderingFeatures::<overridesShadowmask>k__BackingField
-	bool ___U3CoverridesShadowmaskU3Ek__BackingField_23;
+	bool ___U3CoverridesShadowmaskU3Ek__BackingField_25;
 	// System.String UnityEngine.Rendering.SupportedRenderingFeatures::<overrideShadowmaskMessage>k__BackingField
-	String_t* ___U3CoverrideShadowmaskMessageU3Ek__BackingField_24;
+	String_t* ___U3CoverrideShadowmaskMessageU3Ek__BackingField_26;
 
 public:
 	inline static int32_t get_offset_of_U3CreflectionProbeModesU3Ek__BackingField_1() { return static_cast<int32_t>(offsetof(SupportedRenderingFeatures_t751F1D338419E1CFAF4A3F7CE61B52075D72AF54, ___U3CreflectionProbeModesU3Ek__BackingField_1)); }
@@ -14632,21 +14636,37 @@ public:
 		___U3CparticleSystemInstancingU3Ek__BackingField_22 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CoverridesShadowmaskU3Ek__BackingField_23() { return static_cast<int32_t>(offsetof(SupportedRenderingFeatures_t751F1D338419E1CFAF4A3F7CE61B52075D72AF54, ___U3CoverridesShadowmaskU3Ek__BackingField_23)); }
-	inline bool get_U3CoverridesShadowmaskU3Ek__BackingField_23() const { return ___U3CoverridesShadowmaskU3Ek__BackingField_23; }
-	inline bool* get_address_of_U3CoverridesShadowmaskU3Ek__BackingField_23() { return &___U3CoverridesShadowmaskU3Ek__BackingField_23; }
-	inline void set_U3CoverridesShadowmaskU3Ek__BackingField_23(bool value)
+	inline static int32_t get_offset_of_U3CautoAmbientProbeBakingU3Ek__BackingField_23() { return static_cast<int32_t>(offsetof(SupportedRenderingFeatures_t751F1D338419E1CFAF4A3F7CE61B52075D72AF54, ___U3CautoAmbientProbeBakingU3Ek__BackingField_23)); }
+	inline bool get_U3CautoAmbientProbeBakingU3Ek__BackingField_23() const { return ___U3CautoAmbientProbeBakingU3Ek__BackingField_23; }
+	inline bool* get_address_of_U3CautoAmbientProbeBakingU3Ek__BackingField_23() { return &___U3CautoAmbientProbeBakingU3Ek__BackingField_23; }
+	inline void set_U3CautoAmbientProbeBakingU3Ek__BackingField_23(bool value)
 	{
-		___U3CoverridesShadowmaskU3Ek__BackingField_23 = value;
+		___U3CautoAmbientProbeBakingU3Ek__BackingField_23 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CoverrideShadowmaskMessageU3Ek__BackingField_24() { return static_cast<int32_t>(offsetof(SupportedRenderingFeatures_t751F1D338419E1CFAF4A3F7CE61B52075D72AF54, ___U3CoverrideShadowmaskMessageU3Ek__BackingField_24)); }
-	inline String_t* get_U3CoverrideShadowmaskMessageU3Ek__BackingField_24() const { return ___U3CoverrideShadowmaskMessageU3Ek__BackingField_24; }
-	inline String_t** get_address_of_U3CoverrideShadowmaskMessageU3Ek__BackingField_24() { return &___U3CoverrideShadowmaskMessageU3Ek__BackingField_24; }
-	inline void set_U3CoverrideShadowmaskMessageU3Ek__BackingField_24(String_t* value)
+	inline static int32_t get_offset_of_U3CautoDefaultReflectionProbeBakingU3Ek__BackingField_24() { return static_cast<int32_t>(offsetof(SupportedRenderingFeatures_t751F1D338419E1CFAF4A3F7CE61B52075D72AF54, ___U3CautoDefaultReflectionProbeBakingU3Ek__BackingField_24)); }
+	inline bool get_U3CautoDefaultReflectionProbeBakingU3Ek__BackingField_24() const { return ___U3CautoDefaultReflectionProbeBakingU3Ek__BackingField_24; }
+	inline bool* get_address_of_U3CautoDefaultReflectionProbeBakingU3Ek__BackingField_24() { return &___U3CautoDefaultReflectionProbeBakingU3Ek__BackingField_24; }
+	inline void set_U3CautoDefaultReflectionProbeBakingU3Ek__BackingField_24(bool value)
 	{
-		___U3CoverrideShadowmaskMessageU3Ek__BackingField_24 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___U3CoverrideShadowmaskMessageU3Ek__BackingField_24), (void*)value);
+		___U3CautoDefaultReflectionProbeBakingU3Ek__BackingField_24 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CoverridesShadowmaskU3Ek__BackingField_25() { return static_cast<int32_t>(offsetof(SupportedRenderingFeatures_t751F1D338419E1CFAF4A3F7CE61B52075D72AF54, ___U3CoverridesShadowmaskU3Ek__BackingField_25)); }
+	inline bool get_U3CoverridesShadowmaskU3Ek__BackingField_25() const { return ___U3CoverridesShadowmaskU3Ek__BackingField_25; }
+	inline bool* get_address_of_U3CoverridesShadowmaskU3Ek__BackingField_25() { return &___U3CoverridesShadowmaskU3Ek__BackingField_25; }
+	inline void set_U3CoverridesShadowmaskU3Ek__BackingField_25(bool value)
+	{
+		___U3CoverridesShadowmaskU3Ek__BackingField_25 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CoverrideShadowmaskMessageU3Ek__BackingField_26() { return static_cast<int32_t>(offsetof(SupportedRenderingFeatures_t751F1D338419E1CFAF4A3F7CE61B52075D72AF54, ___U3CoverrideShadowmaskMessageU3Ek__BackingField_26)); }
+	inline String_t* get_U3CoverrideShadowmaskMessageU3Ek__BackingField_26() const { return ___U3CoverrideShadowmaskMessageU3Ek__BackingField_26; }
+	inline String_t** get_address_of_U3CoverrideShadowmaskMessageU3Ek__BackingField_26() { return &___U3CoverrideShadowmaskMessageU3Ek__BackingField_26; }
+	inline void set_U3CoverrideShadowmaskMessageU3Ek__BackingField_26(String_t* value)
+	{
+		___U3CoverrideShadowmaskMessageU3Ek__BackingField_26 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CoverrideShadowmaskMessageU3Ek__BackingField_26), (void*)value);
 	}
 };
 
@@ -28541,12 +28561,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RenderTextureDescriptor_t67FF189E1F35AEB5D6C4
 		int32_t L_8;
 		L_8 = RenderTextureDescriptor_get_width_m5DD56A0652453FDDB51FF030FC5ED914F83F5E31_inline((RenderTextureDescriptor_t67FF189E1F35AEB5D6C43A2D7103F3A8A8CA0B47 *)(&V_0), /*hidden argument*/NULL);
 		float L_9 = ___renderScale1;
-		RenderTextureDescriptor_set_width_m8D4BAEBB8089FD77F4DC81088ACB511F2BCA41EA_inline((RenderTextureDescriptor_t67FF189E1F35AEB5D6C43A2D7103F3A8A8CA0B47 *)(&V_0), ((int32_t)((int32_t)((float)il2cpp_codegen_multiply((float)((float)((float)L_8)), (float)L_9)))), /*hidden argument*/NULL);
+		RenderTextureDescriptor_set_width_m8D4BAEBB8089FD77F4DC81088ACB511F2BCA41EA_inline((RenderTextureDescriptor_t67FF189E1F35AEB5D6C43A2D7103F3A8A8CA0B47 *)(&V_0), il2cpp_codegen_cast_double_to_int<int32_t>(((float)il2cpp_codegen_multiply((float)((float)((float)L_8)), (float)L_9))), /*hidden argument*/NULL);
 		// desc.height = (int)((float)desc.height * renderScale);
 		int32_t L_10;
 		L_10 = RenderTextureDescriptor_get_height_m661881AD8E078D6C1FD6C549207AACC2B179D201_inline((RenderTextureDescriptor_t67FF189E1F35AEB5D6C43A2D7103F3A8A8CA0B47 *)(&V_0), /*hidden argument*/NULL);
 		float L_11 = ___renderScale1;
-		RenderTextureDescriptor_set_height_m1300AF31BCDCF2E14E86A598AFDC5569B682A46D_inline((RenderTextureDescriptor_t67FF189E1F35AEB5D6C43A2D7103F3A8A8CA0B47 *)(&V_0), ((int32_t)((int32_t)((float)il2cpp_codegen_multiply((float)((float)((float)L_10)), (float)L_11)))), /*hidden argument*/NULL);
+		RenderTextureDescriptor_set_height_m1300AF31BCDCF2E14E86A598AFDC5569B682A46D_inline((RenderTextureDescriptor_t67FF189E1F35AEB5D6C43A2D7103F3A8A8CA0B47 *)(&V_0), il2cpp_codegen_cast_double_to_int<int32_t>(((float)il2cpp_codegen_multiply((float)((float)((float)L_10)), (float)L_11))), /*hidden argument*/NULL);
 		// if (!needsAlpha && RenderingUtils.SupportsGraphicsFormat(GraphicsFormat.B10G11R11_UFloatPack32, FormatUsage.Linear | FormatUsage.Render))
 		bool L_12 = ___needsAlpha4;
 		if (L_12)
@@ -34825,7 +34845,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRSystem_UpdateCameraData_m31EA9B7F30C04
 		L_24 = Rect_get_x_mA61220F6F26ECD6951B779FFA7CAD7ECE11D6987((Rect_t7D9187DB6339DBA5741C09B6CCEF2F54F1966878 *)(&V_2), /*hidden argument*/NULL);
 		double L_25;
 		L_25 = bankers_round(((double)((double)L_24)));
-		L_20->set_pixelWidth_7(((int32_t)il2cpp_codegen_subtract((int32_t)((int32_t)((int32_t)L_23)), (int32_t)((int32_t)((int32_t)L_25)))));
+		L_20->set_pixelWidth_7(((int32_t)il2cpp_codegen_subtract((int32_t)il2cpp_codegen_cast_double_to_int<int32_t>(L_23), (int32_t)il2cpp_codegen_cast_double_to_int<int32_t>(L_25))));
 		// baseCameraData.pixelHeight = (int)System.Math.Round(camPixelRect.height + camPixelRect.y) - (int)System.Math.Round(camPixelRect.y);
 		CameraData_t8ADA6CF1D4D9FDF4D3C33F5C66800E87D1BC20F7 * L_26 = ___baseCameraData0;
 		float L_27;
@@ -34838,7 +34858,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRSystem_UpdateCameraData_m31EA9B7F30C04
 		L_30 = Rect_get_y_m4E1AAD20D167085FF4F9E9C86EF34689F5770A74((Rect_t7D9187DB6339DBA5741C09B6CCEF2F54F1966878 *)(&V_2), /*hidden argument*/NULL);
 		double L_31;
 		L_31 = bankers_round(((double)((double)L_30)));
-		L_26->set_pixelHeight_8(((int32_t)il2cpp_codegen_subtract((int32_t)((int32_t)((int32_t)L_29)), (int32_t)((int32_t)((int32_t)L_31)))));
+		L_26->set_pixelHeight_8(((int32_t)il2cpp_codegen_subtract((int32_t)il2cpp_codegen_cast_double_to_int<int32_t>(L_29), (int32_t)il2cpp_codegen_cast_double_to_int<int32_t>(L_31))));
 		// baseCameraData.aspectRatio = (float)baseCameraData.pixelWidth / (float)baseCameraData.pixelHeight;
 		CameraData_t8ADA6CF1D4D9FDF4D3C33F5C66800E87D1BC20F7 * L_32 = ___baseCameraData0;
 		CameraData_t8ADA6CF1D4D9FDF4D3C33F5C66800E87D1BC20F7 * L_33 = ___baseCameraData0;
@@ -40390,7 +40410,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec_U3C_ctorU3Eb__16_0_m24565CBCE
 		NullCheck(L_2);
 		float L_3;
 		L_3 = Camera_get_depth_m063B48665DB9226949AC3A615362EA20193B823D(L_2, /*hidden argument*/NULL);
-		return ((int32_t)il2cpp_codegen_subtract((int32_t)((int32_t)((int32_t)L_1)), (int32_t)((int32_t)((int32_t)L_3))));
+		return ((int32_t)il2cpp_codegen_subtract((int32_t)il2cpp_codegen_cast_double_to_int<int32_t>(L_1), (int32_t)il2cpp_codegen_cast_double_to_int<int32_t>(L_3)));
 	}
 }
 // System.Void UnityEngine.Rendering.Universal.UniversalRenderPipeline/<>c::<.cctor>b__53_0(UnityEngine.Light[],Unity.Collections.NativeArray`1<UnityEngine.Experimental.GlobalIllumination.LightDataGI>)

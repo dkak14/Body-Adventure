@@ -31017,10 +31017,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90
 		V_2 = 0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_0 = ___inputMouseCoordinates0;
 		float L_1 = L_0.get_x_2();
-		V_3 = ((int32_t)((int32_t)L_1));
+		V_3 = il2cpp_codegen_cast_double_to_int<int32_t>(L_1);
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2 = ___inputMouseCoordinates0;
 		float L_3 = L_2.get_y_3();
-		V_4 = ((int32_t)((int32_t)L_3));
+		V_4 = il2cpp_codegen_cast_double_to_int<int32_t>(L_3);
 		int32_t L_4 = V_3;
 		int32_t L_5 = V_4;
 		IL2CPP_RUNTIME_CLASS_INIT(Display_t0A5D09F1F2EB8025FE40EE0F81E0D01BB47A9B44_il2cpp_TypeInfo_var);
@@ -40898,7 +40898,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Mathf_CeilToInt_m3A3E7C0F6A3CF731411B
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tA269614262430118C9FC5C4D9EF4F61C812568F0_il2cpp_TypeInfo_var);
 		double L_1;
 		L_1 = ceil(((double)((double)L_0)));
-		V_0 = ((int32_t)((int32_t)L_1));
+		V_0 = il2cpp_codegen_cast_double_to_int<int32_t>(L_1);
 		goto IL_000c;
 	}
 
@@ -40923,7 +40923,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Mathf_FloorToInt_m9164D538D17B8C3C8A6
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tA269614262430118C9FC5C4D9EF4F61C812568F0_il2cpp_TypeInfo_var);
 		double L_1;
 		L_1 = floor(((double)((double)L_0)));
-		V_0 = ((int32_t)((int32_t)L_1));
+		V_0 = il2cpp_codegen_cast_double_to_int<int32_t>(L_1);
 		goto IL_000c;
 	}
 
@@ -40948,7 +40948,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Mathf_RoundToInt_m56850BDF60FF9E3441C
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tA269614262430118C9FC5C4D9EF4F61C812568F0_il2cpp_TypeInfo_var);
 		double L_1;
 		L_1 = bankers_round(((double)((double)L_0)));
-		V_0 = ((int32_t)((int32_t)L_1));
+		V_0 = il2cpp_codegen_cast_double_to_int<int32_t>(L_1);
 		goto IL_000c;
 	}
 

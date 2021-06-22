@@ -35396,7 +35396,7 @@ IL_0059:
 		float L_24 = L_23.get_z_4();
 		// if (eventDisplayIndex != displayIndex)
 		int32_t L_25 = V_1;
-		if ((((int32_t)((int32_t)((int32_t)L_24))) == ((int32_t)L_25)))
+		if ((((int32_t)il2cpp_codegen_cast_double_to_int<int32_t>(L_24)) == ((int32_t)L_25)))
 		{
 			goto IL_008e;
 		}
